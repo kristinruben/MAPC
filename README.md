@@ -10,7 +10,8 @@ A Rails web app comprising of a single form that allows potential customers to r
 <h3>Steps Taken</h3>
 1. Read instructions: https://docs.google.com/document/d/1N-XtORhuYWlGIQEXlDg_L3IopIUtYyC144SLmhqlaBw/edit (10 minutes)
 2. Initialized new Rails app and set up version control (5 minutes)
-3. 
+3. Added badges (10 minutes)
+4. 
 
 
 <h3>Dependencies</h3>
