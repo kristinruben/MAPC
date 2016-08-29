@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require semantic/dist/semantic.min
 //= require_tree .
