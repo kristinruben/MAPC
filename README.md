@@ -1,8 +1,8 @@
 <h1>MAPC Technical Challenge</h1>
 
 <img src="https://codeship.com/projects/dacac670-5031-0134-33fd-06d0906c550d/status?branch=master" />
-<a href="https://codeclimate.com/github/kristinruben/MAPC/coverage"><img src="https://codeclimate.com/github/kristinruben/MAPC/badges/coverage.svg" /></a>
 <a href="https://codeclimate.com/github/kristinruben/MAPC"><img src="https://codeclimate.com/github/kristinruben/MAPC/badges/gpa.svg" /></a>
+<a href='https://coveralls.io/github/kristinruben/MAPC?branch=master'><img src='https://coveralls.io/repos/github/kristinruben/MAPC/badge.svg?branch=master' alt='Coverage Status' /></a>
 
 
 A Rails web app comprising of a single form that allows potential customers to request a free demo project.
