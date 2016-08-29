@@ -1,4 +1,6 @@
 <h1>MAPC Technical Challenge</h1>
+
+<img src="https://codeship.com/projects/dacac670-5031-0134-33fd-06d0906c550d/status?branch=master" />
 <a href="https://codeclimate.com/github/kristinruben/MAPC/coverage"><img src="https://codeclimate.com/github/kristinruben/MAPC/badges/coverage.svg" /></a>
 <a href="https://codeclimate.com/github/kristinruben/MAPC"><img src="https://codeclimate.com/github/kristinruben/MAPC/badges/gpa.svg" /></a>
 
