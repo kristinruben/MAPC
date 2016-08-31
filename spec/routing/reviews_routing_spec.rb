@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe ReviewsController, type: :routing do
+RSpec.describe DemosController, type: :routing do
   describe 'routing' do
     it 'routes to #new' do
       expect(get: 'venues/1/reviews/new').to route_to(
