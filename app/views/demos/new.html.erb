@@ -1,37 +1,50 @@
-<h2>Start Your Free Demo</h2>
-<form class="ui form">
+<div class="ui container">
+  <br />
+  <h2>Start Your Free Demo</h2>
+<div class="ui form">
+  <%= form_for @demo do |f| %>
   <div class="ui dividing header">Name</div>
   <div class="two fields">
     <div class="field">
-      <input placeholder="First Name" name="first_name" type="text">
+      <%= f.text_field :first_name, placeholder: "First Name", name: "first_name" %>
     </div>
     <div class="field">
-      <input placeholder="Last Name" name="last_name" type="text">
+      <%= f.text_field :last_name, placeholder: "Last Name", name: "last_name" %>
     </div>
   </div>
   <div class="ui dividing header">Account</div>
   <div class="two fields">
     <div class="ten wide field">
-      <input placeholder="Email" name="email" type="text">
+      <%= f.text_field :email, placeholder: "Email", name: "email" %>
     </div>
     <div class="six wide field">
-      <input placeholder="Password (Hidden)" type="password" name="password">
+      <%= f.password_field :password, placeholder: "Password (Hidden)", name: "password" %>
     </div>
   </div>
   <div class="ui dividing header">Project Information</div>
   <div class="two fields">
   <div class="field">
-    <input placeholder="Project Name" name="project_name" type="text">
+    <%= f.text_field :project_name, placeholder: "Project Name", name: "project_name" %>
   </div>
   <div class="field">
-    <input placeholder="Organization Name" name="organization_name" type="text">
+  <%= f.text_field :organization_name, placeholder: "Organization Name", name: "organization_name" %>
   </div>
-  </div>
-  <div class="ui green submit button">Start Your Demo</div>
+</div>
+  <%= f.submit @submit, :class => 'ui green submit button' %>
   <div class="ui error message"></div>
-</form>
+  <% end %>
+</div>
+<br />
+<div class="ui bottom attached warning message">
+  <i class="icon help"></i>
+  Already signed up? <a href="#">Login here</a> instead.
+</div>
+</div>
 
 <script>
+$email = $('.get.ui form'),
+  email = $email.form('get value', 'email');
+console.log(email);
 $('.ui.form')
   .form({
     fields: {
@@ -40,7 +53,7 @@ $('.ui.form')
         rules: [
           {
             type   : 'empty',
-            prompt : 'Please enter your first name'
+            prompt : 'First Name must have a value'
           }
         ]
       },
@@ -49,7 +62,7 @@ $('.ui.form')
         rules: [
           {
             type   : 'empty',
-            prompt : 'Please enter your last name'
+            prompt : 'Last Name must have a value'
           }
         ]
       },
@@ -58,7 +71,7 @@ $('.ui.form')
         rules: [
           {
             type   : 'empty',
-            prompt : 'Please enter an email'
+            prompt : 'Email must have a value'
           }
         ]
       },
@@ -80,7 +93,7 @@ $('.ui.form')
         rules: [
           {
             type   : 'empty',
-            prompt : 'Please enter your project name'
+            prompt : 'Project Name must have a value'
           }
         ]
       },
@@ -89,11 +102,13 @@ $('.ui.form')
         rules: [
           {
             type   : 'empty',
-            prompt : 'Please enter your organization name'
+            prompt : 'Organization Name must have a value'
           }
         ]
       }
-    }
+    },
+    inline : true,
+    on     : 'blur'
   })
 ;
 </script>
