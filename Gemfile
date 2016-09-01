@@ -3,7 +3,12 @@ source 'https://rubygems.org'
 gem 'rspec-rails'
 gem 'puma'
 gem 'coveralls', require: false
-gem 'semantic-ui-rails'
+gem 'jquery-turbolinks'
+gem 'turbolinks'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-semantic', '~> 2.1.7'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'

@@ -1,5 +1,108 @@
 <h2>Start Your Free Demo</h2>
+<form class="ui form">
+  <div class="ui dividing header">Name</div>
+  <div class="two fields">
+    <div class="field">
+      <input placeholder="First Name" name="first_name" type="text">
+    </div>
+    <div class="field">
+      <input placeholder="Last Name" name="last_name" type="text">
+    </div>
+  </div>
+  <div class="ui dividing header">Account</div>
+  <div class="two fields">
+    <div class="field">
+      <input placeholder="Email" name="email" type="text">
+    </div>
+    <div class="field">
+      <input placeholder="Password (Hidden)" type="password" name="password">
+    </div>
+  </div>
+  <div class="ui dividing header">Project Information</div>
+  <div class="two fields">
+  <div class="field">
+    <input placeholder="Project Name" name="project_name" type="text">
+  </div>
+  <div class="field">
+    <input placeholder="Organization Name" name="organization_name" type="text">
+  </div>
+  </div>
+  <div class="ui green submit button">Start Your Demo</div>
+  <div class="ui error message"></div>
+</form>
 
-<div class="row">
-  <%= render "form" %>
-</div>
+<script>
+$('.ui.form')
+  .form({
+    fields: {
+      first_name: {
+        identifier: 'first_name',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter your first name'
+          }
+        ]
+      },
+      last_name: {
+        identifier: 'last_name',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter your last name'
+          }
+        ]
+      },
+      email: {
+        identifier: 'email',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter an email'
+          }
+        ]
+      },
+      password: {
+        identifier: 'password',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter a password'
+          },
+          {
+            type   : 'minLength[6]',
+            prompt : 'Your password must be at least {ruleValue} characters'
+          }
+        ]
+      },
+      project_name: {
+        identifier: 'project_name',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter your project name'
+          }
+        ]
+      },
+      organization_name: {
+        identifier: 'organization_name',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter your organization name'
+          }
+        ]
+      },
+      terms: {
+        identifier: 'terms',
+        rules: [
+          {
+            type   : 'checked',
+            prompt : 'You must agree to the terms and conditions'
+          }
+        ]
+      }
+    }
+  })
+;
+</script>
