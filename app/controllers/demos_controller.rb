@@ -15,12 +15,12 @@ class DemosController < ApplicationController
  def create
    @demo = Demo.new(demo_params)
    if @demo.save
-     flash[:notice] = "Demo successfully added!"
+     flash[:notice] = "Request successfully submitted!"
      redirect_to "/demos/#{@demo.id}"
    else
-     flash[:notice] = "There were problems saving your demo."
+     flash[:notice] = "There were problems saving your request."
     #  flash[:errors] = @laundromat.errors.full_messages.join(", ")
-     redirect_to new_laundromat_path
+     redirect_to new_demo_path
    end
  end
  #
