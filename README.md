@@ -11,7 +11,9 @@ A Rails web app comprising of a single form that allows potential customers to r
 1. Read instructions: https://docs.google.com/document/d/1N-XtORhuYWlGIQEXlDg_L3IopIUtYyC144SLmhqlaBw/edit (10 minutes)
 2. Initialized new Rails app and set up version control (5 minutes)
 3. Added badges (10 minutes)
-4. 
+4. Thought about practicing TDD and started writing tests; decided to learn Semantic UI first (30 minutes)
+5. Studied Semantic UI docs, added it to app, troubleshot when it didn't work (4 hours)
+6. Wrote form and customized errors (30 minutes)
 
 
 <h3>Dependencies</h3>
@@ -26,3 +28,4 @@ A Rails web app comprising of a single form that allows potential customers to r
 4. `rake db:create`
 5. `rake db:migrate`
 6. `rails s`
+7. Visit `http://localhost:3000/demos/new`
