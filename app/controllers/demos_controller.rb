@@ -14,7 +14,7 @@ class DemosController < ApplicationController
      flash[:notice] = "Request successfully submitted! Please check your email for further instructions."
      redirect_to demos_path
    else
-     flash[:notice] = "There were problems saving your request."
+     flash[:notice] = "If you've signed up with this email before, please log in using the link below."
      redirect_to new_demo_path
    end
  end

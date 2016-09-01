@@ -1,4 +1,5 @@
 <div class="ui container">
+  <br />
   <h2>Start Your Free Demo</h2>
 <div class="ui form">
   <%= form_for @demo do |f| %>
@@ -41,6 +42,9 @@
 </div>
 
 <script>
+$email = $('.get.ui form'),
+  email = $email.form('get value', 'email');
+console.log(email);
 $('.ui.form')
   .form({
     fields: {
@@ -49,7 +53,7 @@ $('.ui.form')
         rules: [
           {
             type   : 'empty',
-            prompt : 'Please enter your first name'
+            prompt : 'First Name must have a value'
           }
         ]
       },
@@ -58,7 +62,7 @@ $('.ui.form')
         rules: [
           {
             type   : 'empty',
-            prompt : 'Please enter your last name'
+            prompt : 'Last Name must have a value'
           }
         ]
       },
@@ -67,7 +71,7 @@ $('.ui.form')
         rules: [
           {
             type   : 'empty',
-            prompt : 'Please enter an email'
+            prompt : 'Email must have a value'
           }
         ]
       },
@@ -89,7 +93,7 @@ $('.ui.form')
         rules: [
           {
             type   : 'empty',
-            prompt : 'Please enter your project name'
+            prompt : 'Project Name must have a value'
           }
         ]
       },
@@ -98,19 +102,11 @@ $('.ui.form')
         rules: [
           {
             type   : 'empty',
-            prompt : 'Please enter your organization name'
+            prompt : 'Organization Name must have a value'
           }
         ]
       }
     },
-    inline : true,
-    on     : 'blur'
-  })
-;
-
-$('.ui.form')
-  .form({
-    fields : validationRules,
     inline : true,
     on     : 'blur'
   })
